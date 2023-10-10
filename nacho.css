@@ -63,7 +63,8 @@
   .content {
       padding-top: 100px;
       padding-bottom: 100px;
-      background-color: antiquewhite;
+      width: 100%;
+      background-color: rgb(250, 227, 246);
   }
   
   .content .body {
@@ -75,20 +76,20 @@
   }
   
   .content .body img{
-      width: 360px;
-      height: 220px;
-      margin-top: -150;
-      object-fit: cover;
+        height: auto;
+        width: 430px;
+        margin-top: -150;
+        object-fit: cover;
   }
   
   h4 {
-      color: white;
+      color: rgb(252, 6, 211);
       margin: 20px 0 20px;
       font-size: 42px;
   }
   
   h3 {
-      color: white;
+      color: rgb(8, 8, 8);
       margin: 20px 0 20px;
       font-size: 25px;
   }
@@ -96,12 +97,17 @@
   .about {
       width: 100%;
       padding: 100px 0;
-      background-color: #191919;
+      background-color: #868484;
   }
   
   .about-text {
       width: 550px;
     }
+
+    .about img {
+        height: auto;
+        width: 480px;
+      }
   
   .main {
       width: 1130px;
@@ -114,6 +120,7 @@
   
   .about-text h2 {
       color: white;
+      letter-spacing: 1px;
       font-size: 75px;
       margin-bottom: 20px;
     }
@@ -150,12 +157,6 @@
       cursor: pointer;
     }
   
-  .portfolio {
-      background: #101010;
-      width: 100%;
-      padding: 50px 0px;
-    }
-  
   .title h2 {
       color: white;
       font-size: 75px;
@@ -167,11 +168,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 50px;
+      min-height: 400px;
     }
     
   .card {
-      height: 390px;
+      height: 400px;
       width: 365px;
       background-color: #191919;
       padding: 20px 35px;
@@ -196,11 +197,11 @@
       margin-bottom: 15px;
     }
   
-  .pragraph p {
+  .pra p {
       color: #fcfc;
       font-size: 16px;
       line-height: 25px;
-      margin-bottom: 30px;
+      margin-bottom: 60px;
     }
   
   .card .button {
@@ -209,7 +210,7 @@
       text-decoration: none;
       border: 2px solid transparent;
       font-weight: bold;
-      padding: 9px 22px;
+      padding: 10px 25px;
       border-radius: 30px;
       transition: 0.3s;
     }
@@ -219,6 +220,40 @@
       border: 2px solid green;
       cursor: pointer;
     }
+
+    .contact {
+        width: 100%;
+        height: 290px;
+        background: #868484;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .contact p {
+        color: #fcfc;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 25px;
+      }
+      
+      .contact .button-two {
+        background-color: lightseagreen;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 10px 25px;
+        border-radius: 30px;
+        transition: 0.3s;
+      }
+      
+      .contact .button-two:hover {
+        background-color: transparent;
+        border: 2px solid green;
+        cursor: pointer;
+      }
   
   @media screen and (max-width: 600px){
   
