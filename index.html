@@ -1,113 +1,96 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="ja">
+<head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="portfolioの練習"/>
-
-    <title>個人用ポートフォリオ</title>
-        <!-- reset.css ress -->
+    <title>ポートフォリオ</title>
+    <!-- reset.css ress -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-
-    <link rel="stylesheet" href="nacho.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-
-  <body>
-    <!-- Hero section -->
-    <div class="hero">
-      <nav>
-        <h2 class="logo">Daigoro<span>Mori</span></h2>
-        <ul>
-          <li><a href="#">ホーム</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">ポートフォリオ</a></li>
-        </ul>
-
-        <button class="btn" onclick="window.open('https://urufaa67.github.io/contack/')" type="button">Contack</button>
-
-        
-      </nav>
-
-      <div class="content">
-        <div class="body">
-          <div class="portfolioInfo">
-            <h4>Studying Now for Programer</h4>
-            <h1>Daigoro<span>Mori</span></h1>
-            <h3>HTML/CSS/Javascript/Python</h3>
-          </div>
-          <img src="./IMG_1406.jfif" alt="" />
+    <link rel="stylesheet" href="test.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <header class="header">
+            <h1 class="site-title">
+                <a href="#"> Introduction </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#first">HOME</a></li>
+                    <li><a href="#second">ABOUT</a></li>
+                    <li><a href="#third">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+            <button class="btn" onclick="window.open('https://urufaa67.github.io/contack/')" type="button">Contack</button>
+    </header>    
+    <!-- <section class="hero"> -->
+        <div class="content">
+            <div id="first" class="body">
+                <div class="portfolioInfo">
+                <h4>Webエンジニア</h4>
+                <h3>HTML/CSS/Javascript/Python</h3>
+                </div>
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="./image/IMG_1406.jfif" />
+                        <img src="./IMG_1406.jfif" alt="" />
+                    </picture>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <!-- About Section -->
+    <!-- </section> -->
+    
     <section class="about">
-      <div class="main">
-        <img src="./IMG_1409.jfif" alt="" />
-        <div class="about-text">
-          <h2>About me</h2>
-          <h5>Web Developer & FullStack Engineer</h5>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            non ratione beatae eligendi distinctio est, ipsa assumenda magni.
-            Rem in repellendus sint unde atque! Ut numquam exercitationem
-            aliquid autem est facere dolores sequi. Numquam, earum.
-          </p>
-          <button onclick="window.open('https://urufaa67.github.io/contack/')" type="button">Contack</button>
+        <div id="second" class="main">
+            <picture>
+                <source media="(max-width: 600px)" srcset="./image/IMG_1409.jfif" />
+                <img src="./IMG_1409.jfif" alt="">
+            </picture>
+
+            <div class="about-text">
+                <h2>About me</h2>
+                <h5>Programer & Student</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quis fuga commodi neque provident ex corrupti voluptatum tempore aliquid. Sed odit nostrum minus, fugiat culpa quam enim excepturi quo vitae.</p>
+                <button onclick="window.open('https://urufaa67.github.io/contack/')" type="button">Contack</button>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- service section start -->
-    <div class="content">
-      <div class="title">
-        <h2>ポートフォリオ</h2>
-      </div>
-
-      <div class="box">
-        <div class="card">
-          <i class="fas fa-bars"> </i>
-          <h5>Web Developer</h5>
-          <div class="pra">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
-              inventore excepturi alias deleniti minus soluta totam non animi
-              voluptates magni!
-            </p>
-            <p style="text-align: center">
-              <a href="#" class="button">もっと読む</a>
-            </p>
-          </div>
+    <section id="third" class="portfolio">
+        <div class="title">
+            <h2>PORTFOLIO</h2>
         </div>
-        <div class="card">
-          <i class="fas fa-user"> </i>
-          <h5>Web Developer</h5>
-          <div class="pra">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
-              inventore excepturi alias deleniti minus soluta totam non animi
-              voluptates magni!
-            </p>
-            <p style="text-align: center">
-              <a href="#" class="button">もっと読む</a>
-            </p>
-          </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-sharp fa-solid fa-code fa-beat fa-2xl"></i>
+                <h5>Studying for Programer</h5>
+                <div class="pragraph">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem alias ipsum earum officiis. Autem, enim ut ea nemo rem voluptate tenetur deserunt in dolore minima? Reiciendis eveniet tempora eius ullam.
+                    </p>
+                    <p style="text-align: center">
+                        <button onclick="window.open('#')" type="button">MORE</button>
+                    </p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <i class="fa-sharp fa-regular fa-file-code fa-bounce fa-2xl"></i>
+                <h5>NachoNeko</h5>
+                <div class="pragraph">
+                    <p>
+                        I made a site introduce vtuber that I loved the most from
+                        a lot of! Her name is "Natsuki Amashiro". That`s called "Nacho".
+                    </p>
+                    <p style="text-align: center">
+                    <button onclick="window.open('http://127.0.0.1:5500/dayo.html')" type="button">MORE</button>
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Contact Me -->
-    <div class="contact">
-      <p>気になる方は私にお問い合わせください。</p>
-      <button class="button-two" onclick="window.open('https://urufaa67.github.io/contack/')" type="button">Contack</button>
-
-    </div>
-
-  </body>
+    </section>
+        <div class="contact">
+            <p>気になる方は私にお問い合わせください。</p>
+            <button class="button-two" onclick="window.open('https://urufaa67.github.io/contack/')" type="button">Contack</button>
+        </div>      
+</body>
 </html>
